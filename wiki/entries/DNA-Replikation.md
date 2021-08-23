@@ -1,0 +1,5 @@
+#DNA-Replikation
+
+DNA-Replikation bezeichnet die identische Vervielfältigung der genetischen Erbinformation.
+
+Während des Prozesses wird die DNA zuerst durch das Enzym Topoisomerase entspiralisiert. Anschließend spaltet das Enzym Helicase die DNA an den Wasserstoffbrückenbindungen in ihre zwei Einzelstränge. Die neu entstandenen Einzelstänge dienen nun als Matrix (syn. Mutterstrang). Damit das Enzym [DNA-Polymerase](/DNA-Polymerasen) mit der synthetiserung eines neuen Stranges beginnen kann, benötigt sie [Primer](/Primer). Diese werden vom Enzym Primase gebildet. Anschließend kann die [DNA-Polymerase](/DNA-Polymerasen) aus [Nukleotiden](/Nukleotide) aus dem Cytoplasma neue DNA-Stränge synthetisieren. Dabei kann immer nur in 3'-5' Richtung synthetisiert werden. Da nur einer der beiden Stränge (Leitstrang auch Mutterstrang) kontinuierlich synthetisiert werden kann entstehen am anderen Strang(Folgestrang auch Tochterstrang) einzelne kurze Abschnitte, sogenannte Okazakifragmente. Em Ende der Replikation entfehrt eine ander Polymerase die Primer und die Ligase verbindet die entstandenen Bruchstücke.

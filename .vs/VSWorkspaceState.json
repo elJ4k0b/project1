@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\wiki",
+    "\\wiki\\encyclopedia",
+    "\\wiki\\encyclopedia\\static",
+    "\\wiki\\encyclopedia\\static\\encyclopedia",
+    "\\wiki\\encyclopedia\\templates",
+    "\\wiki\\encyclopedia\\templates\\encyclopedia",
+    "\\wiki\\entries",
+    "\\wiki\\wiki"
+  ],
+  "SelectedNode": "\\wiki\\encyclopedia\\views.py",
+  "PreviewInSolutionExplorer": false
+}

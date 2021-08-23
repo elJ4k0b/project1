@@ -1,0 +1,50 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+{% block body %}
+<div class="row mr-1">
+    <div class="col-6">
+        <h1>{{title}}</h1>
+        <form class="form mb-2" action="{% url 'editInput' %}" method="post">
+            {%csrf_token%}
+            <div class="form-row">
+                <div class="col">
+                    <label>Title of your Wikipage</label>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    {{das.title}}
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <input class="form-control" type="text" rows="2" placeholder="Style your text using markdown syntax." style="resize:none" readonly>
+                </div>
+                <div class="col-auto ml-0">
+                    <a href="https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax">
+                        <button class="btn btn-primary" type="button" id="moreOnMarkdown"> Read more here</button>
+                    </a>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    {{das.content}}
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <button class="btn btn-primary w-100" type="submit" id="submit">{{submitMessage}}</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+
+
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+{%load static%}
+  <head>
+    <link rel="stylesheet" href="{% static 'encyclopedia/style_start.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row bg-light p-3 justify-content-between">
+        <div class="col-11">
+          <img src="{%static 'encyclopedia/Logo1.png' %}"  alt="Kook Logo" style="height:35px">
+        </div>
+        <div class="col-auto ml-5 px-0 ml-4">
+          <img src="{%static 'encyclopedia/More_image.png'% }" class="mt-2 d-block" style="height:20px">
+        </div>
+        <div class="col-auto pl-0">
+          <a href="start.html">
+            <img src="{%static 'encyclopedia/Google_Icon.png' %}" data-toggle="tooltip" data-placement="bottom" title="Back to Search" style="height:35px">
+          </a>
+        </div>
+      </div>
+      <div class="row py-3 px-4 border-bottom">
+        <div class="col-3">
+          <span class="text-danger"> <h5>Advanced Search</h5></span>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-auto px-1 ml-4 border-bottom">
+          <form action="http://google.com/search">
+            <div class="form-group form-row">
+              <div class="col-2">
+                <label> all these words:</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control form-control-sm own-edged" name="as_q">
+              </div>
+              <div class="col">
+                Type the important words: tri-colour rat terrier
+              </div>
+            </div>
+            <div class="form-group form-row ">
+              <div class="col-2 " >
+                <label> this exact word or phrase:</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control form-control-sm own-edged" name="as_epq">
+              </div>
+              <div class="col">
+                Put exact words in quotes: "rat terrier"
+              </div>
+            </div>
+            <div class="form-group form-row ">
+              <div class="col-2 " >
+                <label>any of these words:</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control form-control-sm own-edged" name="as_oq">
+              </div>
+              <div class="col">
+                Type OR between all the words you want: miniature OR standard
+              </div>
+            </div>
+            <div class="form-group form-row ">
+              <div class="col-2 " >
+                <label>none of these words:</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control form-control-sm own-edged" name="as_eq" value="">
+              </div>
+              <div class="col">
+                Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+              </div>
+            </div>
+            <div class="form-group form-row ">
+              <div class="col-2" >
+                <label>numbers ranging from:</label>
+              </div>
+                <div class="col-2 mr-1">
+                  <input type="text" class="form-control form-control-sm own-edged" name="as_nlo" value="">
+                </div>
+                <div class="col-2">
+                  <input type="text" class="form-control form-control-sm own-edged" name="as_nhi" value="">
+                </div>
+              <div class="col">
+                Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011
+              </div>
+            </div>
+            <div class="form form-row mb-4 ">
+              <div class="col-6 p-0">
+                <button type="submit" class="btn btn-primary btn-sm own-edged float-right">Advanced Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row border-top justify-content-left px-3 fixed-bottom own-footer">
+        <div class="col-auto my-auto">
+          <span class="text-secondary"> <a href="https://support.google.com/websearch" class="text-secondary">Help</a> </span>
+        </div>
+        <div class="col-auto my-auto">
+          <span class="text-secondary"> <a href="https://policies.google.com/privacy" class="text-secondary">Privacy </a> </span>
+        </div>
+        <div class="col-auto my-auto">
+          <span class="text-secondary"> <a href="https://policies.google.com/terms" class="text-secondary">Terms </a></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

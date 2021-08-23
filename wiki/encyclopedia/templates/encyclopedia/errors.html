@@ -1,0 +1,11 @@
+{%extends "encyclopedia/layout.html"%}
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block body %}
+    <h1>{{errorHead}}</h1>
+    <p>Your requested page: "{{title}}" {{errorMessage}}.</p>
+    <p>Go back to the <a href="{% url 'index' %}"> Main</a> page to get an overview of all available pages.</p>
+    <p>Or create a new page for {{thisOrAnother}} topic here <a href="{%url 'pageCreate' %}"> Create Your Page</a></p>
+{% endblock %}

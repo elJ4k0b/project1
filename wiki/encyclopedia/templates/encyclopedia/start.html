@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+{%load static%}
+<head>
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="{% static 'encyclopedia/style_start.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .fixed {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid position-fixed h-100">
+        <div class="row p-3 justify-content-end">
+            <div class="col-auto mr-0 pt-1 pr-1">
+                <span class="align-bottom bg-white"><a href=advanced.html class="black">Advanced Search</a></span>
+            </div>
+            <div class="col-auto mr-0 pt-1">
+                <span class="align-bottom bg-white"><a href=images.html class="black">Images</a></span>
+            </div>
+            <div class="col-auto mx-0">
+                <img src="{%static 'encyclopedia/More_image.png' %}" class="mt-2 d-block" style="height:20px">
+            </div>
+            <div class="col-auto mx-0 pl-1">
+                <a href="index.html">
+                    <img src="{%static 'encyclopedia/Google_Icon.png' %}" data-toggle="tooltip" data-placement="bottom" title="Back to Search" style="height:35px">
+                </a>
+            </div>
+        </div>
+        <div class="row own-15percent">
+        </div>
+        <div class=" row bg-white">
+            <div class="col">
+                <img src="{%static 'encyclopedia/Logo1.png' %}" alt="SVG mit img Tag laden" class="mx-auto d-block" style="height:100%, width:auto;">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-4 mx-auto">
+                <form action="search" method="post">
+                    {%csrf_token%}
+                    <div class="form-row justify-content-center">
+                        <div class="form-col w-100">
+                            <input type="text" class="form-control form-control-lg own-rounded " name="q" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center mt-4">
+                        <button type="submit" id="submit" class="btn mr-3 btn-light btn-md">Google Search</button>
+                        <button type="button" name="btnI" value="I'm Feeling Lucky" class="btn btn-light btn-md">I'm Feeling Lucky</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row border-top justify-content-between px-3 fixed-bottom own-footer">
+            <div class="col-auto my-auto">
+                <span><a href="https://ads.google.com/intl/en_de/home/" class="text-secondary">Advertisisng </a></span>
+            </div>
+            <div class="col-auto my-auto">
+                <span class="text-secondary"> <a href="https://www.google.de/services" class="text-secondary">Business </a> </span>
+            </div>
+            <div class="col-auto my-auto">
+                <span class="text-secondary"> <a href="https://www.google.com/search/howsearchworks" class="text-secondary">How Search works </a> </span>
+            </div>
+            <div class="col-md my-auto">
+                <span class="text-secondary"></span>
+            </div>
+            <div class="col-auto my-auto">
+                <span class="text-secondary"> <a href="https://policies.google.com/privacy" class="text-secondary">Privacy </a> </span>
+            </div>
+            <div class="col-auto my-auto">
+                <span class="text-secondary"> <a href="https://policies.google.com/terms" class="text-secondary">Terms </a></span>
+            </div>
+            <div class="col-auto my-auto">
+                <span class="text-secondary"> <a href="https://www.google.de/preferences" class="text-secondary">Settings </a> </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

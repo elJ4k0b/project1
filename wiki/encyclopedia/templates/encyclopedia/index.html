@@ -1,0 +1,26 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <h1>All Pages</h1>
+        </div>
+    </div>
+    {% for x, y in descriptionsx.items%}
+    <div class="row mb-2">
+        <div class="col-lg-7">
+            <div class="card" style="width: 100%;">
+                <div class="card-body">
+                    <h5 class="card-title">{{x}}</h5>
+                    <p class="card-text">{{y}}...</p>
+                    <a href="/wiki/{{x}}" class="card-link">{{x}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+{% endblock %}

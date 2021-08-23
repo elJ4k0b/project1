@@ -1,0 +1,27 @@
+.own-rounded{
+  border-radius: 30px !important;
+  display: inline-block !important;
+}
+.own-edged{
+  border-radius:0px !important;
+}
+.own-hover:hover{
+  border: 3px !important;
+  border-color: blue !important;
+}
+.own-15percent{
+  height:15% !important;
+}
+a.own-links {
+  text-decoration: none !important;
+}
+a.black:link,
+a.black:hover,
+a.black:visited
+{
+    color: black !important;
+}
+.own-footer{
+  background-color: #edeef0 !important;
+  height: 5%;
+}
